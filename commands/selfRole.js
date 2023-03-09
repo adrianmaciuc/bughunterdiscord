@@ -15,7 +15,7 @@ module.exports = {
 			)),
     async execute(interaction) {
     	const option = interaction.options.getString('options');
-    	await interaction.add(option, 'Role added')
+		await message.member.addRole(option)
 		await interaction.reply(`You have selected ${option}`)
             },
 }
