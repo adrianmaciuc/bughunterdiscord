@@ -9,13 +9,13 @@ module.exports = {
 			.setDescription('options available to choose')
 			.setRequired(true)
 			.addChoices(
-				{ name: 'Python', value: 'Python' },
+				{ name: 'Python', value: '1083496592339906721' },
 				{ name: 'JavaScript', value: 'JavaScript' },
 				{ name: 'C#', value: 'C#' },
 			)),
     async execute(interaction) {
-    	const option = interaction.options.getString('options');
-		await message.member.addRole(option)
-		await interaction.reply(`You have selected ${option}`)
-            },
+    	const value = interaction.options.getString('options');
+		await interaction.member.roles.add(value)
+		await interaction.reply(`Role added to your user`)
+    },
 }
