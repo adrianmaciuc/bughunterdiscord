@@ -16,6 +16,6 @@ module.exports = {
     async execute(interaction) {
     	const value = interaction.options.getString('options');
 		await interaction.member.roles.add(value)
-		await interaction.reply(`Role added to your user`)
+		await interaction.reply(`Role added to your user`,{ ephemeral: true})
     },
 }

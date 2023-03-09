@@ -7,8 +7,7 @@ module.exports = {
 	async execute(interaction) {
 		await interaction.reply({ 
             content: `Secret Pong! - https://www.google.com
-                      Secret Receipe - https://www.bing.com
-                      Secret Sauce - https://www.breakit.dev`,
+                      Secret Receipe - https://www.bing.com`,
             ephemeral: true });
 	},
 };
