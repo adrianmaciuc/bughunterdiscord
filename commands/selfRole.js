@@ -9,13 +9,21 @@ module.exports = {
 			.setDescription('options available to choose')
 			.setRequired(true)
 			.addChoices(
-				{ name: 'Python', value: '1083496592339906721' },
-				{ name: 'JavaScript', value: 'JavaScript' },
-				{ name: 'C#', value: 'C#' },
+				{ name: 'Python', value: '1082341163853426688' },
+				{ name: 'JavaScript', value: '1082341861655576648 ' },
+				{ name: 'Cucumber', value: '1082341378534674573' },
+				{ name: 'HTML', value: '1082341521434607667' },
+				{ name: 'API', value: '1082341569337761864' },
+				{ name: 'SQL', value: '1082341451784003604' },
+				{ name: 'Java', value: '1082340872194117784' },
 			)),
     async execute(interaction) {
     	const value = interaction.options.getString('options');
 		await interaction.member.roles.add(value)
-		await interaction.reply(`Role added to your user`,{ ephemeral: true})
+		await interaction.reply({
+			content: `Role added to your user`,
+			ephemeral: true
+	})
+	
     },
 }
