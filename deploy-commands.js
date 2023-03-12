@@ -5,12 +5,12 @@ const path = require('node:path');
 
 const commands = [];
 // Grab all the command files from the commands directory you created earlier
-const commandsPath = path.join(__dirname, 'commands');
+const commandsPath = path.join(__dirname, 'slashCommands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
 
 // Grab the SlashCommandBuilder#toJSON() output of each command's data for deployment
 for (const file of commandFiles) {
-	const command = require(`./commands/${file}`);
+	const command = require(`./slashCommands/${file}`);
 	commands.push(command.data.toJSON());
 }
 
@@ -29,7 +29,8 @@ const rest = new REST({ version: '10' }).setToken(process.env.cubaToken);
 		);
 
 		console.log(`Successfully reloaded ${data.length} application (/) commands.`);
-	} catch (error) {
+	}
+	catch (error) {
 		// And of course, make sure you catch and log any errors!
 		console.error(error);
 	}
