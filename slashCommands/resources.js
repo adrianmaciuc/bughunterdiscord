@@ -17,7 +17,7 @@ module.exports = {
 		.setName('resources')
 		.setDescription('Replies with resources!'),
 	async execute(interaction) {
-		if (interaction.channel.name == "nudeschide") {
+		if (interaction.channel.name == "bot-commands") {
 			await interaction.reply({
 				embeds: [eventsEmbed],
 				ephemeral: true,
