@@ -4,7 +4,13 @@ const path = require('node:path');
 require('dotenv').config()
 
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ intents: [
+	GatewayIntentBits.Guilds,
+	GatewayIntentBits.GuildMessages,
+	GatewayIntentBits.MessageContent,
+	GatewayIntentBits.GuildMembers,
+] });
+
 client.commands = new Collection();
 
 const slashCommandsPath = path.join(__dirname, 'slashCommands');
@@ -15,7 +21,8 @@ const eventsPath = path.join(__dirname, 'events');
 const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
 
 for (const file of channelMsgCommandFiles) {
-	const command = require(`./channelMsgCommands/${file}`);
+	const filePath = path.join(channelMsgCommandsPath, file);
+	const command = require(filePath);
 	client.commands.set(command.name, command);
 }
 
@@ -42,7 +49,7 @@ for (const file of eventFiles) {
 	}
 }
 
-client.on('message', message => {
+client.on('messageCreate', message => {
 	if (!message.content.startsWith(process.env.prefix) || message.author.bot) return;
 
 	const args = message.content.slice(process.env.prefix.length).trim().split(/ +/);
