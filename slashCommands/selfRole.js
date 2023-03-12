@@ -10,7 +10,7 @@ module.exports = {
 				.setRequired(true)
 				.addChoices(
 					{ name: 'Python', value: '1082341163853426688' },
-					{ name: 'JavaScript', value: '1082341861655576648 ' },
+					{ name: 'JavaScript', value: '1082341861655576648' },
 					{ name: 'Cucumber', value: '1082341378534674573' },
 					{ name: 'HTML', value: '1082341521434607667' },
 					{ name: 'API', value: '1082341569337761864' },
@@ -18,12 +18,19 @@ module.exports = {
 					{ name: 'Java', value: '1082340872194117784' },
 				)),
 	async execute(interaction) {
-		const value = interaction.options.getString('allocate');
-		await interaction.member.roles.add(value)
-		await interaction.reply({
-			content: `Role added to your user`,
-			ephemeral: true,
-		})
-	
+		const roleID = interaction.options.getString('allocate');
+		if (!interaction.member.roles.cache.some(role => role.id === roleID)) {
+			await interaction.member.roles.add(roleID)
+			await interaction.reply({
+				content: `Role added to your user`,
+				ephemeral: true,
+			})
+		}
+		else {
+			await interaction.reply({
+				content: `You already have this role`,
+				ephemeral: true,
+			})
+		}
 	},
 }
