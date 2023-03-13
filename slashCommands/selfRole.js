@@ -5,7 +5,7 @@ module.exports = {
 		.setName('selfrole')
 		.setDescription('Setup the roles/tech stack you think fits well with your knowledge')
 		.addStringOption(option =>
-			option.setName('allocate')
+			option.setName('options')
 				.setDescription('options available to choose')
 				.setRequired(true)
 				.addChoices(
@@ -18,7 +18,7 @@ module.exports = {
 					{ name: 'Java', value: '1082340872194117784' },
 				)),
 	async execute(interaction) {
-		const roleID = interaction.options.getString('allocate');
+		const roleID = interaction.options.getString('options');
 		if (!interaction.member.roles.cache.some(role => role.id === roleID)) {
 			await interaction.member.roles.add(roleID)
 			await interaction.reply({
