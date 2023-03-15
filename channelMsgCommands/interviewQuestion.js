@@ -1,6 +1,6 @@
 module.exports = {
 	name: 'intrebareinterviu',
-	description: 'Beep!',
+	description: 'Request an interview question',
 	execute(message) {
 		// checks if active member 1085216984372871208
 		const randomQuestion = questions[Math.floor(Math.random() * questions.length)]
