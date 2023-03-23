@@ -4,10 +4,9 @@ const { EmbedBuilder } = require('discord.js');
 const eventsEmbed = new EmbedBuilder()
 	.setColor(0x33A1FF)
 	.setTitle('Upcoming Events')
-	.setDescription('The following events are organized by our QA Community here at Bug Hunter Server')
+	.setDescription('--------------------------------------------')
 	.addFields([
-		{ name: 'Cypress Workshop', value: 'XX.03.2023 at XX:XX' },
-		{ name: 'Thursday Tech Talk', value: 'XX.03.2023 at XX:XX' },
+		{ name: 'Meet \'n Greet', value: 'Every Wednesday at 19:00 - This event is about welcoming and meeting new people' },
 	])
 	.setFooter({ text: 'Join us, share your knowledge and maybe learn something new' });
 

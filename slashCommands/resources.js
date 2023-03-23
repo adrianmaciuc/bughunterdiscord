@@ -14,6 +14,8 @@ const eventsEmbed = new EmbedBuilder()
 		{ name: 'A good selection of testing resources', value: 'https://libraryoftesting.com/' },
 		{ name: 'Need a fake API to play around with API Testing ?', value: 'https://reqres.in/' },
 		{ name: 'How about anoter fake API to play around with API Testing ?', value: 'https://jsonplaceholder.typicode.com/' },
+		{ name: 'Good place to find tips and tricks for various techs in QA', value: 'https://www.lambdatest.com/learning-hub/' },
+		
 	)
 	.setFooter({ text: 'Join us, share your knowledge and maybe learn something new' });
 

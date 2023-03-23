@@ -1,6 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
 
-module.exports = {
+// while in development file is not exported. Once done change 'const development' into 'module.exports'
+const development = {
 	data : new SlashCommandBuilder()
 		.setName('addevent')
 		.setDescription('Add a new event to our Upcoming Events board')

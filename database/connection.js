@@ -22,4 +22,5 @@ const currentEvents = sequelize.define('currentEvents', {
 	username: Sequelize.STRING,
 })
 
-module.exports = { currentEvents }
+// while in development file is not exported. Once done change 'const development' into 'module.exports'
+const development = { currentEvents }
