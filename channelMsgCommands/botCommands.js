@@ -7,6 +7,7 @@ const botCommands = new EmbedBuilder()
 	.setAuthor({ name: 'Bug Hunter team presents' })
 	.setDescription('In order to perform a command, you have to type in the channel the command')
 	.addFields(
+		{ name: '/upcoming', value: 'The events that we currently have scheduled' },
 		{ name: '/selfrole', value: 'By using this command you can assign to yourself a role. Please choose the technology that you feel comfortable with the most. You may be asked questions about it.' },
 		{ name: '!intrebareinterviu', value: 'If you ask the bot for this command it will give you one of the most often questions you get during interviews for Quality Assurance' },
 		{ name: '/resources', value: 'This command will give you our top links with resources we think every Quality Assurance Engineer should have access to', inline: true },
