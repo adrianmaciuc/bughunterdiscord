@@ -10,8 +10,7 @@ module.exports = {
 		else {
 			message.reply('You do not have the right to request a question. Only members with role `active member` can ')
 		}
-	},
-		
+	},	
 }
 
 
