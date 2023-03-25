@@ -67,6 +67,31 @@ client.on('messageCreate', message => {
 });
 
 
+client.on('interactionCreate', async interaction => {
+	if (!interaction.isCommand()) return;
+
+	if (interaction.commandName === 'poll') {
+		const question = interaction.options.getString('question');
+		const options = interaction.options.getString('options').split(',');
+
+		// Build the poll message
+		let pollMessage = `**${question}**\n`;
+		options.forEach((option, index) => {
+			pollMessage += `\n${index + 1}. ${option}`;
+		});
+
+		// Send the poll message
+		await interaction.reply({ content: pollMessage });
+
+		// Add reactions to the poll message
+		const poll = await interaction.fetchReply();
+		options.forEach(async (_, index) => {
+			await poll.react(`${index + 1}\u20e3`);
+		});
+	}
+});
+
+
 // Log in to Discord with your client's token
 client.login(process.env.cubaToken);
 
