@@ -1,0 +1,23 @@
+{
+  "160": {
+    "message": "maybe remind me of this",
+    "targetHour": "2",
+    "targetMinutes": "28",
+    "targetDay": "26",
+    "sent": "true"
+  },
+  "640": {
+    "message": "what remind me of this",
+    "targetHour": "2",
+    "targetMinutes": "7",
+    "targetDay": "26",
+    "sent": "true"
+  },
+  "851": {
+    "message": "maybe remind me of this",
+    "targetHour": "2",
+    "targetMinutes": "30",
+    "targetDay": "26",
+    "sent": "true"
+  }
+}
