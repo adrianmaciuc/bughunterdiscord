@@ -1,11 +1,20 @@
 module.exports = {
 	name: 'sendembed',
+	usage: `!sendembed * Title * Description`,
 	execute(message) {  
-		if (message.author.bot === false && message.author.username === 'zipinel') {
-			const args = message.content.slice(process.env.prefix.length).trim().split("|");
+		if (message.author.bot === false 
+			&& message.member.roles.cache.some(role => role.id === '1080571304404594759')
+			&& message.content.startsWith(process.env.prefix + 'sendembed')) {
+			const extractedArgs = message.content.slice(process.env.prefix.length).trim().split("*");
+
+			if (message.content.startsWith(process.env.prefix) 
+				&& extractedArgs.length != 3
+				|| !message.content.includes('*')) { 
+				return message.reply(`usage of sendembed : ${message.client.commands.get('sendembed').usage} `)
+			}
 	
-			const title = args[1];
-			const description = args[2];
+			const title = extractedArgs[1];
+			const description = extractedArgs[2];
 	
 			if (message.channel) {
 				const embedMessage = {

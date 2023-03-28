@@ -6,15 +6,15 @@ module.exports = {
 	args: true,
 	usage: `!setreminder * <message> * <targetHour> * <targetMinutes> * <targetDay>`,
 	execute(message) {
-		const extractArgs = message.content.slice(process.env.prefix.length).trim().split("*")
-		if (message.content.startsWith(process.env.prefix) && extractArgs.length !== 5) { 
+		const extractedArgs = message.content.slice(process.env.prefix.length).trim().split("*")
+		if (message.content.startsWith(process.env.prefix) && extractedArgs.length !== 5) { 
 			return message.reply(`usage of setreminder : ${message.client.commands.get('setreminder').usage} . Example : setreminder * Please remind me of this * 1 * 45 * 26`)
 		}
 		const data = {
-			message: extractArgs[1].trim(),
-			targetHour: extractArgs[2].trim(),
-			targetMinutes: extractArgs[3].trim(),
-			targetDay: extractArgs[4].trim(),
+			message: extractedArgs[1].trim(),
+			targetHour: extractedArgs[2].trim(),
+			targetMinutes: extractedArgs[3].trim(),
+			targetDay: extractedArgs[4].trim(),
 			sent: "false",
 		};
 
