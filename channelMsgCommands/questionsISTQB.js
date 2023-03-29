@@ -35,7 +35,7 @@ module.exports = {
 			})
 			setTimeout(() => {
 				message.channel.send(randomQuestion.correctAnswer)
-			}, 25000)
+			}, 35000)
 		}
 	},
 };
