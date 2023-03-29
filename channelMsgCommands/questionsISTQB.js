@@ -14,10 +14,10 @@ module.exports = {
 				color: 0x33A1FF,
 				title: randomQuestion.question,
 				description: `
-                a) ${randomQuestion.answerA}\n
-                b) ${randomQuestion.answerB}\n
-                c) ${randomQuestion.answerC}\n
-                d) ${randomQuestion.answerD}\n
+				1] ${randomQuestion.answerA}\n
+                2] ${randomQuestion.answerB}\n
+                3] ${randomQuestion.answerC}\n
+                4] ${randomQuestion.answerD}\n
                 `,
 			};
 
