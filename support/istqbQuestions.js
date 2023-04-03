@@ -549,12 +549,160 @@ const questions = {
 		correctAnswer: `Q65 - Correct answer is 2.`,
 	},
 	66 : {
-		question: "58. Which of the following is a typical test objective?",
+		question: "66. Which of the following is a typical test objective?",
 		answer1: 'Preventing defects',
 		answer2: 'Repairing defect',
 		answer3: 'Comparing actual results to expected results.',
 		answer4: 'Analyzing the cause of failure',
-		correctAnswer: `Q58 - Correct answer is 1.`,
+		correctAnswer: `Q66 - Correct answer is 1.`,
+	},
+	67 : {
+		question: "67. A phone ringing in an adjacent cubicle momentarily distracts a programmer, causing the programmer to improperly program the logic that checks the upper boundary of an input variable. Later, during system testing, a tester notices that this input field accepts invalid input values. The improperly coded logic for the upper boundary check is:",
+		answer1: 'The root cause',
+		answer2: 'The failure',
+		answer3: 'The error',
+		answer4: 'The defect',
+		correctAnswer: `Q67 - Correct answer is 4. The root cause is the distraction that the programmer experienced while programming. The accepting of invalid inputs is the failure. The error is the mistaken thinking that resulted in putting the defect in the code. The problem in the code is a defect.`,
+	},
+	68 : {
+		question: "68. A product owner says that your role as a tester on an Agile team is to catch all the bugs before the end of each iteration. Which of the following is a testing principle that could be used to respond to this statement?",
+		answer1: 'Defect clustering',
+		answer2: 'Testing shows the presence of defects',
+		answer3: 'Absence of error fallacy',
+		answer4: 'Root cause analysis',
+		correctAnswer: `Q68 - Correct answer is 2. Defect clustering has to show where defects are most likely to be found, not whether all of them can be found. Testing can show the presence of defects but cannot prove their absence, which makes it impossible to know if you have caught all the bugs. Further, the impossibility of exhaustive testing makes it impossible for you to catch all the bugs. Absence of error fallacy, this principle says that you can find and remove many bugs but still release an unsuccessful software product, which is not what the product owner is asking you to ensure. `,
+	},
+	69 : {
+		question: "69. Programmers often write and execute unit tests against code which they have written. During this self-testing activity, which of the following is a tester mindset that programmers should adopt to perform this unit testing effectively?",
+		answer1: 'Good communication skills',
+		answer2: 'Code coverage',
+		answer3: 'Evaluating code defect',
+		answer4: 'Attention to detail',
+		correctAnswer: `Q69 - Correct answer is 4. The programmer appears to be performing unit testing on their own. Code coverage is useful for unit testing, but it is not a tester mindset . Evaluating code defect ,the programmers mindset included contemplating what might be wrong with the code, but that is not a testers mindset .Attention to detail, will help programmers find defects during unit testing`,
+	},
+	70 : {
+		question: `70. Consider the following testing activities:\n
+					1. Selecting regression tests\n
+					2. Evaluating completeness of test execution.\n
+					3. Identifying which user stories have open defect reports.\n
+					4. Evaluating whether the number of tests for each requirement is consistent with the level of product risk.\n
+					Consider the following ways traceability can help testing:\n
+					A. Improve understandability of test status reports to include status of test basis items\n
+					B. Make testing auditable\n
+					C. Provide information to assess process quality\n
+					D. Analyze the impact of changes\n
+					Which of the following best matches the testing activity with how traceability can assist that activity?\n`,
+		answer1: '1D, 2B, 3C, 4A',
+		answer2: '1B, 2D, 3A, 4C',
+		answer3: '1D, 2C, 3A, 4B',
+		answer4: '1D, 2B, 3A, 4C',
+		correctAnswer: `Q70 - Correct answer is 4. Traceability assists with: •Selecting regression tests in terms of analyzing the impact of changes. •Evaluating completeness of test execution which makes testing auditable. •Identifying which user stories have open defect reports which improves understandability of test status reports to include status of test basis items. •Evaluating whether the number of tests for each requirement is consistent with the level of product risk which provides information to assess test process quality (i.e., alignment of test effort with risk).`,
+	},
+	71: {
+		question: "71. A tester participated in a discussion about proposed database structure. The tester identified a potential performance problem related to certain common user searches. This possible problem was explained to the development team. Which of the following is a testing contribution to success that BEST matches this situation??",
+		answer1: 'Enabling required tests to be identified at an early stage',
+		answer2: 'Ensuring processes are carried out properly',
+		answer3: 'Reducing the risk of fundamental design defects',
+		answer4: 'Reducing the risk of untestable functionality',
+		correctAnswer: `Q71 - Correct answer is 3. while enabling required tests to be identified in an early stage is a testing contribution to success per section 1.2.1, there is no indication in the question that the tester did so. Ensuring processes are carried out properly is part of quality assurance, not a testing contribution to success. Reducing the risk of fundamental design defects is a testing contribution to success per section 1.2.1. Database structure is related to design, and performance problems can be a significant product risk`,
+	},
+	72 : {
+		question: "72. Which of the following is an example of a task that can be carried out as part of the test process?",
+		answer1: 'Analyzing a defect',
+		answer2: 'Designing test data',
+		answer3: 'Assigning a version to a test item',
+		answer4: 'Writing a user story',
+		correctAnswer: `Q72 - Correct answer is 2. Analyzing a defect is part of debugging, not testing. Creating test data is a test implementation task per section 1.4.2. While a tester may need to identify a test items version for results reporting purposes, assigning a test items version is part of configuration management, per section 5.4. Writing a user story is not a testing activity and should be done by the product owner`,
+	},
+	73 : {
+		question: "73. Which of the following provides the definition of the term test case?",
+		answer1: 'Subset of the value domain of a variable within a component or system in which all values are expected to be treated the same based on the specification',
+		answer2: 'A set of preconditions, inputs, actions, expected results and postconditions, developed based on test conditions',
+		answer3: 'Work products produced during the test process for use in planning, designing, executing, evaluating and reporting on testing.',
+		answer4: 'A source to determine an expected result to compare with the actual result of the system under test',
+		correctAnswer: `Q73 - Correct answer is 2.`,
+	},
+	74 : {
+		question: "74. Which of the following is a typical objective of testing?",
+		answer1: 'To find defects and failure',
+		answer2: 'To validate the project plan works as required',
+		answer3: 'Ensuring of complete testing',
+		answer4: 'Comparing actual results with expected results',
+		correctAnswer: `Q74 - Correct answer is 1. One of the major objectives of testing is to find defects and failures. Validation of the project plan would be a project management activity. Complete/exhaustive testing is not possible. "Comparing actual results with expected results” is a test performing activity, but not a test objective`,
+	},
+	75 : {
+		question: "75. Which of the following is an example of a failure in a car cruise control system?",
+		answer1: 'The developer of the system forgot to rename variables after a cut-and-paste operation',
+		answer2: 'Unnecessary code that sounds an alarm when reversing was included in the system',
+		answer3: 'The system stops maintaining a set speed when the radio volume is increased or decreased',
+		answer4: 'The design specification for the system wrongly states speeds',
+		correctAnswer: `Q75 - Correct answer is 3.`,
+	},
+	76 : {
+		question: "76. Which of the following is a defect rather than a root cause in a fitness tracker?",
+		answer1: 'Because the author of the requirements was unfamiliar with the domain of fitness training, he therefore wrongly assumed that users wanted heartbeat in beats per hour',
+		answer2: 'The tester of the smartphone interface had not been trained in state transition testing, so missed a major defect',
+		answer3: 'An incorrect configuration variable implemented for the GPS function could cause location problems during daylight saving times',
+		answer4: 'Because the designer had never worked on wearable devices before, she as designer of the user interface therefore misunderstood the effects of reflected sunlight',
+		correctAnswer: `Q76 - Correct answer is 3.`,
+	},
+	77 : {
+		question: "77. As a result of risk analysis, more testing is being directed to those areas of the system under test where initial testing found more defects than average. Which of the following testing principles is being applied?",
+		answer1: 'Beware of the pesticide paradox',
+		answer2: 'Testing is context dependent',
+		answer3: 'Absence of errors is a fallacy',
+		answer4: 'Defects cluster together',
+		correctAnswer: `Q77 - Correct answer is 4.`,
+	},
+	78 : {
+		question: `78. Given the following test activities and tasks:\n
+					A. Test design\n
+					B. Test implementation.\n
+					C. Test execution\n
+					D. Test completion\n
+					
+					1. Entering change requests for open defect reports\n
+					2. Identifying test data to support the test cases\n
+					3. Prioritizing test procedures and creating test data\n
+					4. Analyzing discrepancies to determine their cause\n
+					Which of the following BEST matches the activities with the tasks?\n`,
+		answer1: 'A2, B3, C4, D1',
+		answer2: 'A2, B1, C3, D4',
+		answer3: 'A3, B2, C4, D1',
+		answer4: 'A3, B2, C1, D4',
+		correctAnswer: `Q78 - Correct answer is 1.`,
+	},
+	79: {
+		question: "79. Which of the following BEST describes how value is added by maintaining traceability between the test basis and test artifacts?",
+		answer1: 'Maintenance testing can be fully automated based on changes to the initial requirements',
+		answer2: 'It is possible to determine if a new test case has increased coverage of the requirements',
+		answer3: 'Test managers can identify which testers found the highest severity defect.',
+		answer4: 'Areas that may be impacted by side-effects of a change can be targeted by confirmation testing',
+		correctAnswer: `Q79 - Correct answer is 2. If all testcases are linked with requirements, then whenever a new test case (with traceability) is added, it is possible to see if any previously uncovered requirements are covered by the new test case `,
+	},
+	80 : {
+		question: "80. Which of the following qualities is MORE likely to be found in a testers mindset rather than in a developers?",
+		answer1: 'A testers mindset tends to grow and mature as the tester gains experience',
+		answer2: 'Ability to see what might go wrong',
+		answer3: 'Good communication with team member',
+		answer4: 'Attention to detail',
+		correctAnswer: `Q80 - Correct answer is 2. Developers are often more interested in designing and building solutions than in contemplating what might be wrong with those solutions`,
+	},
+	81: {
+		question: "81. Which one of the following answers describes a test condition?",
+		answer1: 'A distinguishing characteristic of a component or system',
+		answer2: 'A testable aspect of a component or system identified as a basis for testing',
+		answer3: 'The degree to which a software product provides functions which meet stated and implied needs when the software is used under specified conditions',
+		answer4: 'Test cases designed to execute combinations of conditions and actions resulting from them',
+		correctAnswer: `Q81 - Correct answer is 2.`,
+	},
+	82 : {
+		question: "82. Which of the following statements is a valid objective for testing?",
+		answer1: 'The test should start as late as possible so that development had enough time to create a good product',
+		answer2: 'To validate whether the test object works as expected by the users and other stakeholder',
+		answer3: 'To prove that all possible defects are identified',
+		answer4: 'To prove that any remaining defects will not cause any failure',
+		correctAnswer: `Q82 - Correct answer is 2.`,
 	},
 }
 
