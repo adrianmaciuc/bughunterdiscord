@@ -62,4 +62,5 @@ const questions = [
 	'46. Provide an example of a bug that has low priority and low severity ?', 
 	'47. What is a traceability matrix?',
 	'48. What is the difference between black-box and white-box testing?',
+	'49. What is retesting?',
 ]
