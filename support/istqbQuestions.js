@@ -354,7 +354,7 @@ const questions = {
 	},
 	42 : {
 		question: "42. As a tester which of the following is a key to effectively communicating and maintaining positive relationships with developers when there is disagreement over the prioritization of a defect?",
-		answer1: 'Escalate the issue to human resources and stress the importance of mutual res',
+		answer1: 'Escalate the issue to human resources and stress the importance of mutual respect',
 		answer2: 'Communicate in a setting with senior management to ensure everyone understands',
 		answer3: 'Convince the developer to accept the blame for the mistake',
 		answer4: 'Remind them of the common goal of creating quality systems',
@@ -409,12 +409,12 @@ const questions = {
 		correctAnswer: `Q48 - Correct answer is 2.`,
 	},
 	49 : {
-		question: "49. What is the test basis?",
-		answer1: 'The point during software development when testing should start',
-		answer2: 'The body of knowledge used for test analysis and design',
-		answer3: 'The source to determine the actual results from a set of tests',
-		answer4: 'The method used to systematically devise test conditions',
-		correctAnswer: `Q49 - Correct answer is 3.`,
+		question: "49. Which one of the statements below describes the most common situation for a failure discovered during testing or in production?",
+		answer1: 'The product crashed when the user selected an option in a dialog box.',
+		answer2: 'The wrong version of a compiled source code file was included in the build',
+		answer3: 'The computation algorithm used the wrong input variable',
+		answer4: 'The developer misinterpreted the requirement for the algorithm',
+		correctAnswer: `Q48 - Correct answer is 1. A crash is clearly noticeable by the user`,
 	},
 	50 : {
 		question: "50. What is the test basis?",
@@ -703,6 +703,188 @@ const questions = {
 		answer3: 'To prove that all possible defects are identified',
 		answer4: 'To prove that any remaining defects will not cause any failure',
 		correctAnswer: `Q82 - Correct answer is 2.`,
+	},
+	83 : {
+		question: "83. Which of the following statements correctly describes the difference between testing and debugging?",
+		answer1: 'Testing identifies the source of defects; debugging analyzes the defects and proposes prevention activities',
+		answer2: 'Dynamic testing shows failures caused by defects; debugging eliminates the defects, which are the source of failures',
+		answer3: 'Testing does not remove faults; but debugging removes defects that cause the fault',
+		answer4: 'Dynamic testing prevents the causes of failures; debugging removes the failure',
+		correctAnswer: `Q83 - Correct answer is 2. Dynamic testing can show failures that are caused by defects in the software. Debugging eliminates the defects, which are the source of failures, not the root cause of the defects`,
+	},
+	84 : {
+		question: "84. Mr. Test has been testing software applications on mobile devices for a period of 5 years. He has a wealth of experience in testing mobile applications and achieves better results in a shorter time than others. Over several months Mr. Test did not modify the existing automated test cases and did not create any new test cases. This leads to fewer and fewer defects being found by executing the tests.?",
+		answer1: 'Testing depends on the environment',
+		answer2: 'Exhaustive testing is not possible',
+		answer3: 'Repeating of same tests will not find new defects',
+		answer4: 'Defects cluster together',
+		correctAnswer: `Q84 - Correct answer is 3. Principle #5 says “If the same tests are repeated over and over again, eventually these tests no longer find any new defects. To detect new defects, existing tests and test data may need changing, and new tests may need to be written.” `,
+	},
+	85 : {
+		question: "85. In what way can testing be part of Quality Assurance?",
+		answer1: 'It ensures that requirements are detailed enough',
+		answer2: 'Testing reduces the risk of poor software quality',
+		answer3: 'It ensures that standards in the organization are followed',
+		answer4: 'It measures the quality of software in terms of number of executed test cases',
+		correctAnswer: `Q85 - Correct answer is 2. Testing contributes to the achievement of quality in a variety of ways, e.g. such as reducing the risk of inadequate software quality`,
+	},
+	86 : {
+		question: "86. Which of the following activities is part of the main activity test analysis in the test process??",
+		answer1: 'Identifying any required infrastructure and tools',
+		answer2: 'Creating test suites from test scripts',
+		answer3: 'Analyzing lessons learned for process improvement',
+		answer4: 'Evaluating the test basis for testability',
+		correctAnswer: `Q86 - Correct answer is 4. This activity is performed during the test analysis activity (test analysis)`,
+	},
+	87 : {
+		question: `87. Match the following test work products (1-4) with the right description (A-D):\n
+					A. A set of test scripts to be executed in a specific test run\n
+					B. A set of instructions for the execution of a test.\n
+					C. Contains expected results\n
+					D. Documentation of test activities in session-based exploratory testing\n
+					
+					1. Test suite\n
+					2. Test case\n
+					3. Test script\n
+					4. Test charter\n
+					Which of the following BEST matches the activities with the tasks?\n`,
+		answer1: 'A1, C2, B3, D4',
+		answer2: 'D1, B2, A3, C4',
+		answer3: 'A1, C2, D3, B4',
+		answer4: 'D1, C2, B3, A4',
+		correctAnswer: `Q87 - Correct answer is 1.`,
+	},
+	88 : {
+		question: "88. Which of the following will help prevent defects from reoccurring?",
+		answer1: 'Determining the environmental conditions that caused the failure',
+		answer2: 'Improving processes based on root cause analysis',
+		answer3: 'Lessons learned from other projects',
+		answer4: 'Prioritizing reoccurring defects higher than new defects',
+		correctAnswer: `Q88 - Correct answer is 2.`,
+	},
+	89 : {
+		question: "89. Which characteristic must a tester possess in order to be successful when working with a project team?",
+		answer1: 'Constructive communication skills',
+		answer2: 'Authoritarian leadership style',
+		answer3: 'Extroverted personality',
+		answer4: 'Extensive organizational network',
+		correctAnswer: `Q89 - Correct answer is 1. Identifying failures during testing can be perceived as criticism so the approach must be presented in a constructive manner`,
+	},
+	90 : {
+		question: "90. When test cases are designed early in the lifecycle, verifying the test basis via the test design, which common test objective is being achieved?",
+		answer1: 'Gaining confidence',
+		answer2: 'Finding defects',
+		answer3: 'Preventing defects',
+		answer4: 'Providing information for decision making',
+		correctAnswer: `Q90 - Correct answer is 3. The other three are achieved primarily by doing dynamic testing. This is a tricky one because you are very likely to find defects while doing this analysis and this may lead to either gaining or destroying confidence and needing to supply information to the decision makers. However, the wording of the question matches the wording in the syllabus that defines preventing defects`,
+	},
+	91 : {
+		question: "91. When following the fundamental test process, when should the test control activity take place?",
+		answer1: 'During the planning activities',
+		answer2: 'During the implementation and execution activities',
+		answer3: 'During the monitoring activities',
+		answer4: 'During all the activities',
+		correctAnswer: `Q91 - Correct answer is 4. Control occurs throughout the project to ensure that it is staying on track based on the plan and to take any corrective steps that may be necessary. The monitoring information is used to determine if control actions are needed.`,
+	},
+	92 : {
+		question: "92. Test cases occurs during which activity in the fundamental test process?",
+		answer1: 'Test planning',
+		answer2: 'Test design',
+		answer3: 'Test implementation',
+		answer4: 'Evaluating exit criteria',
+		correctAnswer: `Q92 - Correct answer is 2. The design and prioritization of the high level test cases happens during test analysis and design. Prioritization of the test procedures happens during implementation and execution`,
+	},
+	93 : {
+		question: "93. Which of the following is an example of debugging?",
+		answer1: 'A tester finds a defect and reports it',
+		answer2: 'A tester retests a fix from the developer and finds a regression',
+		answer3: 'A developer finds and fixes a defect',
+		answer4: 'A developer performs unit testing',
+		correctAnswer: `Q93 - Correct answer is 3. Debugging is what the developer does to identify the cause of the defect, analyze it and fix it. 4 may involve debugging, if the developer finds a defect, but the act of unit testing is not the same as debugging`,
+	},
+	94 : {
+		question: "94. Which of the following is a true statement about exhaustive testing?",
+		answer1: 'Its a form of stress testing',
+		answer2: 'It is not feasible except in the case of trivial software',
+		answer3: 'It is commonly done with test automation',
+		answer4: 'It is normally the responsibility of the developer during unit testing',
+		correctAnswer: `Q94 - Correct answer is 2. Exhaustive testing, all combinations of inputs and preconditions, is not feasible unless the software is trivially simple. Otherwise it would take too long and might not even be possible.`,
+	},
+	95 : {
+		question: "95. When should the testers start reviewing project documents?",
+		answer1: 'When they have been baselined and approved',
+		answer2: 'After the first revision',
+		answer3: 'As soon as a draft is available',
+		answer4: 'When the developers have started coding',
+		correctAnswer: `Q95 - Correct answer is 3. This allows testers to have input into the quality of the document as well as the work products that will result from the documentation. Reviewing at the draft stage will require subsequent reviews as the document matures, but better to get a look at it while it’s still being changed to provide input.`,
+	},
+	96 : {
+		question: "96. How does software testing contribute to the quality of delivered software?",
+		answer1: 'By detecting and removing all the defects in the delivered code and ensuring that all tests adhere to the quality standards set for the project',
+		answer2: 'By measuring reliability of the software and ensuring that it is always above 99.99percent',
+		answer3: 'By identifying root causes of defects from past projects and using the lessons learned to improve processes and thus help to reduce the defect count',
+		answer4: 'By detecting all deviations from coding good practice and ensuring that these are corrected',
+		correctAnswer: `Q96 - Correct answer is 3`,
+	},
+	97 : {
+		question: "97. Which of the following BEST describes the relationship between test planning and test execution?",
+		answer1: 'Test planning sets the level of detail in test procedures for test execution',
+		answer2: 'Test planning schedules test execution but does not assign resources',
+		answer3: 'Test planning defines the overall approach to testing but does not schedule test execution',
+		answer4: 'Test planning assigns resources for test execution but does not schedule the test activities.',
+		correctAnswer: `Q97 - Correct answer is 1.`,
+	},
+	98 : {
+		question: "98. Which of the following is a valid objective of testing?",
+		answer1: 'Correcting defects',
+		answer2: 'Confirming target delivery dates',
+		answer3: 'Finding defects',
+		answer4: 'Ensuring no defects are present',
+		correctAnswer: `Q98 - Correct answer is 3.`,
+	},
+	99 : {
+		question: "99. Which statement correctly describes debugging?",
+		answer1: 'Testers identify defects, developers locate and correct defects, testers confirm the correction has cleared the original defect',
+		answer2: 'Developers identify defects, testers locate defects, developers correct and confirm the correction has cleared the original defect',
+		answer3: 'Testers identify and locate defects, developers correct defects and confirm the correction has cleared the original defect',
+		answer4: 'Developers identify, locate and correct defects, testers confirm the correction has cleared the original defect',
+		correctAnswer: `Q99 - Correct answer is 1.`,
+	},
+	100 : {
+		question: "100. Which of the activities of the fundamental test process does the task verify the test environment set up is correct relate to?",
+		answer1: 'Planning and control',
+		answer2: 'Analysis and design',
+		answer3: 'Implementation',
+		answer4: 'Evaluating exit criteria and reporting',
+		correctAnswer: `Q100 - Correct answer is 3.`,
+	},
+	101 : {
+		question: "101. An iPhone application identifies and counts all purchases of a particular product from a shopping website. The application as implemented incorrectly counts purchase attempts by including both failed attempts, and also those where the purchase was terminated by the user before completion. When the code was executed in testing it was found that the problem was located in the purchase identification module, where the first stage in the purchasing process was counted, rather than a successful confirmed purchase. Which of the following statements correctly identifies what has happened?",
+		answer1: 'The application failed because of a defect in the purchase identification module caused by a programmer mistake or an error in the specification',
+		answer2: 'An error by the programmer led to a mistake in the purchase identification module and this caused the application to fail',
+		answer3: 'A defect in the purchase identification module caused by a mistake in the module specification led to an error in the overall application',
+		answer4: 'A fault in the specification led to an error in the purchase identification module which caused a failure in the application',
+		correctAnswer: `Q101 - Correct answer is 1. This is a question about differentiating between errors (mistakes), defects (faults, bugs) and failures as defined in Section 1.1.2 of the syllabus. Option A correctly identifies the failure in the overall application, which was the result of a defect in on of the modules (it functioned incorrectly) and the root cause of that was either an error in the specification or a mistake by a programmer`,
+	},
+	102 : {
+		question: `102. In any software development life cycle (SDLC) model, which of the following are characteristics of good testing?:\n
+					I. Providing complete test coverage of all branches of the system code..\n
+					II. Having a corresponding testing activity for each development activity.\n
+					III. Testers should be involved in reviewing documents as soon as drafts are available.\n
+					IV. Each test level has test objectives specific to that level.\n`,
+		answer1: 'II , III and IV',
+		answer2: 'I and III',
+		answer3: 'I , III and IV',
+		answer4: 'I and II',
+		correctAnswer: `Q102 - Correct answer is 1.`,
+	},
+	103 : {
+		question: "103. V Model is :",
+		answer1: 'A software development model that illustrates how testing activities integrate with software development phases',
+		answer2: 'A software life-cycle model that is not relevant for testing',
+		answer3: 'The official software development and testing life-cycle model of ISTQB',
+		answer4: 'A testing life cycle model including unit, integration, system and acceptance phases',
+		correctAnswer: `Q103 - Correct answer is 1.`,
 	},
 }
 
