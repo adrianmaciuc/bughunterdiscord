@@ -3,7 +3,7 @@ const { questions } = require('../support/istqbQuestions.js');
 
 module.exports = {
 	name: 'istqb',
-	usage: `!istqb . You do not need to type anything else than !question`,
+	usage: `!istqb . You do not need to type anything else than !istqb`,
 	execute(message) { 
 		const extractedArgs = message.content.slice(process.env.prefix.length).trim().split(" ")
 
