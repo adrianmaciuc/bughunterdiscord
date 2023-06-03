@@ -7,6 +7,6 @@ module.exports = {
 		const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'welcome-to-the-server'); 
 		if (!welcomeChannel) return; // check if the welcome channel exists
         
-		welcomeChannel.send(`Welcome to our server, ${member}! Please read the rules in the #rules channel and introduce yourself in the #about-me channel. If you want to access our cool features provided by @Kubalicious bot, type in any channel !botcommands`);
+		welcomeChannel.send(`Welcome to our server, ${member}! Please read the rules in the #rules channel and introduce yourself in the #about-me channel.`);
 	},
 };
