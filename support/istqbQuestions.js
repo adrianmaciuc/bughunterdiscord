@@ -33,19 +33,6 @@ const questions = {
 		answer4: 'Uncover software errors',
 		correctAnswer: `Q4 - Correct answer is 4`,
 	},
-	5 : {
-		question: `5. Which of the following are USUALLY stated as testing objectives?:\n
-					I. Finding defects in the software\n
-					II. Reducing maintenance costs\n
-					III. Confirming that the system works\n
-					IV. Assessing the quality of the software\n
-					V. Meeting schedule milestones`,
-		answer1: 'I and II',
-		answer2: 'I and IV',
-		answer3: 'II IV and V.',
-		answer4: 'III and IV',
-		correctAnswer: `Q5 - Correct answer is 2`,
-	},
 	6 : {
 		question: "6. Which is not the testing objectives?",
 		answer1: 'Finding Defects',
@@ -158,19 +145,6 @@ const questions = {
 		answer4: 'Is more expensive if found in requirements than functional design',
 		correctAnswer: `Q19 - Correct answer is 2.`,
 	},
-	20 : {
-		question: `20. Consider the following statements about early test design:\n
-					I. Early test design can prevent fault multiplication\n
-					II. Faults found during early test design are more expensive to fix\n
-					III. Early test design can find faults\n
-					IV. Early test design can cause changes to the requirements\n
-					V. Early test design takes more effort`,
-		answer1: 'I, III, IV are true. II & V are false',
-		answer2: 'III is true, I II IV & V are false',
-		answer3: 'III & IV are true, I II & V are false',
-		answer4: 'I II IV & V are true, II is false',
-		correctAnswer: `Q20 - Correct answer is 1.`,
-	},
 	21 : {
 		question: "21. The later in the development life cycle a fault is discovered, the more expensive it is to fix. Why?",
 		answer1: 'The documentation is poor, so it takes longer to find out what the software is doing.',
@@ -227,31 +201,6 @@ const questions = {
 		answer4: 'Designing the Tests',
 		correctAnswer: `Q27 - Correct answer is 4. Done during test design stage`,
 	},
-	28 : {
-		question: `28. Test Implementation and execution has which of the following major tasks?:\n
-					I. Developing and prioritizing test cases, creating test data, writing test procedures and optionally preparing the test harnesses and writing automated test scripts.\n
-					II. Creating the test suite from the test cases for efficient test execution.\n
-					III. Verifying that the test environment has been set up correctly.\n
-					IV. Determining the exit criteria.\n`,
-		answer1: 'II, III are true. IV is false',
-		answer2: 'I and IV true, II is false',
-		answer3: 'I & II are true, III & IV are false',
-		answer4: 'II III IV are true, I is false',
-		correctAnswer: `Q28 - Correct answer is 1. Determining the exit criteria. is done in test planning stage`,
-	},
-	29 : {
-		question: `29. Which of the following are MAJOR test implementation and execution tasks?:\n
-					I. Comparing results\n
-					II. Creating test suites\n
-					III. Reporting discrepancies\n
-					IV. Logging the outcome\n
-                    V. Analyzing lessons learned\n`,
-		answer1: 'II, III and IV',
-		answer2: 'I III IV and V',
-		answer3: 'I II III and IV',
-		answer4: 'III IV and V',
-		correctAnswer: `Q29 - Correct answer is 3.`,
-	},
 	30 : {
 		question: "30. If an expected result is not specified then:",
 		answer1: 'We cannot run the test',
@@ -283,18 +232,6 @@ const questions = {
 		answer3: 'Assessing the need for additional tests',
 		answer4: 'Finalizing and archiving testware.',
 		correctAnswer: `Q33 - Correct answer is 4. If you do not store the report(one of the artifacts) , how will you justify the summary report. if you have reports you can prepare summary reports but if you have summary report you can get the results`,
-	},
-	34 : {
-		question: `34. Which of the following is a part of Test Closure Activities?:\n
-					I. Checking which planned deliverables have been delivered\n
-					II. Defect report analysis.\n
-					III. Finalizing and archiving testware\n
-					IV. Analyzing lessons\n`,
-		answer1: 'I, II and IV are true and III is false',
-		answer2: 'I II III are true and IV is false',
-		answer3: 'I III IV are true and II is false',
-		answer4: 'All of above are true',
-		correctAnswer: `Q34 - Correct answer is 3.`,
 	},
 	35 : {
 		question: "35. One person has been dominating the current software process improvement meeting. Which of the following techniques should the facilitator use to bring other team members into the discussion?",
@@ -464,14 +401,6 @@ const questions = {
 		answer4: 'It is normally the responsibility of the developer during unit testing',
 		correctAnswer: `Q55 - Correct answer is 2. Exhaustive testing all combinations of inputs and preconditions is not feasible unless the software is trivially simple.Otherwise it would take too long and might not even be possible.`,
 	},
-	56 : {
-		question: "56. A new retail product was released to production by your company. Shortly after the release it was apparent that there were numerous problems with the point of sale application. This resulted in a number of customer complaints and negative postings on social media encouraging people to take their business to your competitor. You have investigated the problems and have discovered that the production point of sale equipment is a later model than the model used in testing. The software functions correctly on the old version but fails on the later model. Given this scenario what is the root cause and what is the effect?",
-		answer1: 'The root cause is the old equipment and the effect is the new equipment',
-		answer2: 'The root cause is the customer complaints and the effect is the social media posting',
-		answer3: 'The root cause is conducting the testing on the wrong version of the equipment and the effect is the customer complaints and postings',
-		answer4: 'The root cause is the software failing on the later model and the effect is the customer complaints',
-		correctAnswer: `Q56 - Correct answer is 3. The root cause is that thetesting and maybe the developmentwere conducted on the wrong version of the POS equipment. The effect of the problem is the customer complaints and the social media postings.`,
-	},
 	57 : {
 		question: "57. If you need to provide a report showing test case execution coverage of the requirements what do you need to track?",
 		answer1: 'Traceability between the test cases and the requirements',
@@ -520,18 +449,6 @@ const questions = {
 		answer4: 'Testers expect that there might be defects in the software product which the developers have not found and fixed',
 		correctAnswer: `Q62 - Correct answer is 3.`,
 	},
-	63 : {
-		question: `34. Which of the following statements are TRUE?:\n
-					I. Software testing may be required to meet legal or contractual requirements.\n
-					II. Software testing is mainly needed to improve the quality of the product.\n
-					III. Rigorous testing and fixing of found defects could help reduce the risk of problems occurring in an operational environment.\n
-					IV. Rigorous testing is sometimes used to prove that all failures have been found.\n`,
-		answer1: 'I, II and III are true and IV is false',
-		answer2: 'I is true, II III and IV are false',
-		answer3: 'I and III are true, II and IV are false',
-		answer4: 'III and IV are true, I and II are false',
-		correctAnswer: `Q34 - Correct answer is 1.`,
-	},
 	64 : {
 		question: "64. Which of the following statements correctly describes the difference between testing and debugging?",
 		answer1: 'Testing identifies the source of defects; debugging analyzes the faults and proposes prevention activities.',
@@ -557,7 +474,7 @@ const questions = {
 		correctAnswer: `Q66 - Correct answer is 1.`,
 	},
 	67 : {
-		question: "67. A phone ringing in an adjacent cubicle momentarily distracts a programmer, causing the programmer to improperly program the logic that checks the upper boundary of an input variable. Later, during system testing, a tester notices that this input field accepts invalid input values. The improperly coded logic for the upper boundary check is:",
+		question: "67. A programmer improperly creatss the logic that checks the upper boundary of an input. Later, a tester notices that this input field accepts invalid input values. The improperly coded logic for the upper boundary check is:",
 		answer1: 'The root cause',
 		answer2: 'The failure',
 		answer3: 'The error',
@@ -580,26 +497,8 @@ const questions = {
 		answer4: 'Attention to detail',
 		correctAnswer: `Q69 - Correct answer is 4. The programmer appears to be performing unit testing on their own. Code coverage is useful for unit testing, but it is not a tester mindset . Evaluating code defect ,the programmers mindset included contemplating what might be wrong with the code, but that is not a testers mindset .Attention to detail, will help programmers find defects during unit testing`,
 	},
-	70 : {
-		question: `70. Consider the following testing activities:\n
-					1. Selecting regression tests\n
-					2. Evaluating completeness of test execution.\n
-					3. Identifying which user stories have open defect reports.\n
-					4. Evaluating whether the number of tests for each requirement is consistent with the level of product risk.\n
-					Consider the following ways traceability can help testing:\n
-					A. Improve understandability of test status reports to include status of test basis items\n
-					B. Make testing auditable\n
-					C. Provide information to assess process quality\n
-					D. Analyze the impact of changes\n
-					Which of the following best matches the testing activity with how traceability can assist that activity?\n`,
-		answer1: '1D, 2B, 3C, 4A',
-		answer2: '1B, 2D, 3A, 4C',
-		answer3: '1D, 2C, 3A, 4B',
-		answer4: '1D, 2B, 3A, 4C',
-		correctAnswer: `Q70 - Correct answer is 4. Traceability assists with: •Selecting regression tests in terms of analyzing the impact of changes. •Evaluating completeness of test execution which makes testing auditable. •Identifying which user stories have open defect reports which improves understandability of test status reports to include status of test basis items. •Evaluating whether the number of tests for each requirement is consistent with the level of product risk which provides information to assess test process quality (i.e., alignment of test effort with risk).`,
-	},
 	71: {
-		question: "71. A tester participated in a discussion about proposed database structure. The tester identified a potential performance problem related to certain common user searches. This possible problem was explained to the development team. Which of the following is a testing contribution to success that BEST matches this situation??",
+		question: "71. A tester identified a potential performance problem related to certain common user searches. This possible problem was explained to the development team. Which of the following is a testing contribution to success that BEST matches this situation??",
 		answer1: 'Enabling required tests to be identified at an early stage',
 		answer2: 'Ensuring processes are carried out properly',
 		answer3: 'Reducing the risk of fundamental design defects',
@@ -654,24 +553,6 @@ const questions = {
 		answer4: 'Defects cluster together',
 		correctAnswer: `Q77 - Correct answer is 4.`,
 	},
-	78 : {
-		question: `78. Given the following test activities and tasks:\n
-					A. Test design\n
-					B. Test implementation.\n
-					C. Test execution\n
-					D. Test completion\n
-					
-					1. Entering change requests for open defect reports\n
-					2. Identifying test data to support the test cases\n
-					3. Prioritizing test procedures and creating test data\n
-					4. Analyzing discrepancies to determine their cause\n
-					Which of the following BEST matches the activities with the tasks?\n`,
-		answer1: 'A2, B3, C4, D1',
-		answer2: 'A2, B1, C3, D4',
-		answer3: 'A3, B2, C4, D1',
-		answer4: 'A3, B2, C1, D4',
-		correctAnswer: `Q78 - Correct answer is 1.`,
-	},
 	79: {
 		question: "79. Which of the following BEST describes how value is added by maintaining traceability between the test basis and test artifacts?",
 		answer1: 'Maintenance testing can be fully automated based on changes to the initial requirements',
@@ -712,14 +593,6 @@ const questions = {
 		answer4: 'Dynamic testing prevents the causes of failures; debugging removes the failure',
 		correctAnswer: `Q83 - Correct answer is 2. Dynamic testing can show failures that are caused by defects in the software. Debugging eliminates the defects, which are the source of failures, not the root cause of the defects`,
 	},
-	84 : {
-		question: "84. Mr. Test has been testing software applications on mobile devices for a period of 5 years. He has a wealth of experience in testing mobile applications and achieves better results in a shorter time than others. Over several months Mr. Test did not modify the existing automated test cases and did not create any new test cases. This leads to fewer and fewer defects being found by executing the tests.?",
-		answer1: 'Testing depends on the environment',
-		answer2: 'Exhaustive testing is not possible',
-		answer3: 'Repeating of same tests will not find new defects',
-		answer4: 'Defects cluster together',
-		correctAnswer: `Q84 - Correct answer is 3. Principle #5 says “If the same tests are repeated over and over again, eventually these tests no longer find any new defects. To detect new defects, existing tests and test data may need changing, and new tests may need to be written.” `,
-	},
 	85 : {
 		question: "85. In what way can testing be part of Quality Assurance?",
 		answer1: 'It ensures that requirements are detailed enough',
@@ -735,24 +608,6 @@ const questions = {
 		answer3: 'Analyzing lessons learned for process improvement',
 		answer4: 'Evaluating the test basis for testability',
 		correctAnswer: `Q86 - Correct answer is 4. This activity is performed during the test analysis activity (test analysis)`,
-	},
-	87 : {
-		question: `87. Match the following test work products (1-4) with the right description (A-D):\n
-					A. A set of test scripts to be executed in a specific test run\n
-					B. A set of instructions for the execution of a test.\n
-					C. Contains expected results\n
-					D. Documentation of test activities in session-based exploratory testing\n
-					
-					1. Test suite\n
-					2. Test case\n
-					3. Test script\n
-					4. Test charter\n
-					Which of the following BEST matches the activities with the tasks?\n`,
-		answer1: 'A1, C2, B3, D4',
-		answer2: 'D1, B2, A3, C4',
-		answer3: 'A1, C2, D3, B4',
-		answer4: 'D1, C2, B3, A4',
-		correctAnswer: `Q87 - Correct answer is 1.`,
 	},
 	88 : {
 		question: "88. Which of the following will help prevent defects from reoccurring?",
@@ -857,26 +712,6 @@ const questions = {
 		answer3: 'Implementation',
 		answer4: 'Evaluating exit criteria and reporting',
 		correctAnswer: `Q100 - Correct answer is 3.`,
-	},
-	101 : {
-		question: "101. An iPhone application identifies and counts all purchases of a particular product from a shopping website. The application as implemented incorrectly counts purchase attempts by including both failed attempts, and also those where the purchase was terminated by the user before completion. When the code was executed in testing it was found that the problem was located in the purchase identification module, where the first stage in the purchasing process was counted, rather than a successful confirmed purchase. Which of the following statements correctly identifies what has happened?",
-		answer1: 'The application failed because of a defect in the purchase identification module caused by a programmer mistake or an error in the specification',
-		answer2: 'An error by the programmer led to a mistake in the purchase identification module and this caused the application to fail',
-		answer3: 'A defect in the purchase identification module caused by a mistake in the module specification led to an error in the overall application',
-		answer4: 'A fault in the specification led to an error in the purchase identification module which caused a failure in the application',
-		correctAnswer: `Q101 - Correct answer is 1. This is a question about differentiating between errors (mistakes), defects (faults, bugs) and failures as defined in Section 1.1.2 of the syllabus. Option A correctly identifies the failure in the overall application, which was the result of a defect in on of the modules (it functioned incorrectly) and the root cause of that was either an error in the specification or a mistake by a programmer`,
-	},
-	102 : {
-		question: `102. In any software development life cycle (SDLC) model, which of the following are characteristics of good testing?:\n
-					I. Providing complete test coverage of all branches of the system code..\n
-					II. Having a corresponding testing activity for each development activity.\n
-					III. Testers should be involved in reviewing documents as soon as drafts are available.\n
-					IV. Each test level has test objectives specific to that level.\n`,
-		answer1: 'II , III and IV',
-		answer2: 'I and III',
-		answer3: 'I , III and IV',
-		answer4: 'I and II',
-		correctAnswer: `Q102 - Correct answer is 1.`,
 	},
 	103 : {
 		question: "103. V Model is :",
