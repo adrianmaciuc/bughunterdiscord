@@ -40,6 +40,11 @@ module.exports = {
 				message.channel.send(randomQuestion.correctAnswer)
 			}, 50000)
 		}
+		else if (message.author.bot === false 
+			&& message.member.roles.cache.some(role => role.id !== ROLES.activeMember)
+			&& message.content.startsWith(process.env.prefix + 'istqb')) {
+			message.reply(`You must have 'active member' role to use this command. Participate in servers events to gain this role.`)
+		}
 	},
 };
 	
