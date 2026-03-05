@@ -723,4 +723,20 @@ const questions = {
 	},
 }
 
+// Merge auto-generated additions (kept separate for review).
+// This will include entries from `support/istqbQuestions.additions.js` at runtime
+// but does not permanently modify this file. Remove or approve the additions
+// before inlining them into this file.
+try {
+	// Prefer the normalized additions file (tab-indented). Keep additions separate from canonical file.
+	const additions = require('./istqbQuestions.additions.fixed')
+	if (additions && additions.newQuestions) {
+		Object.assign(questions, additions.newQuestions)
+	}
+
+} 
+catch (err) {
+	// If the additions file is not present or has errors, continue without it.
+}
+
 module.exports = { questions }
