@@ -31,13 +31,14 @@ module.exports = {
 
 			const title = extractedArgs[1];
 			const description = extractedArgs[2];
+			const { sanitizeEmbed } = require('../support/embedUtils');
 
 			if (message.channel) {
-				const embedMessage = {
+				const embedMessage = sanitizeEmbed({
 					color: 0x33a1ff,
 					title: title,
 					description: description,
-				};
+				});
 
 				message.channel.send({ embeds: [embedMessage] });
 				message.react("✅");

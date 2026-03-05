@@ -24,25 +24,31 @@ module.exports = {
 			const randomQuestion =
         questions[getList[(getList.length * Math.random()) << 0]];
 
-			const embedMessage = {
+			const { sanitizeEmbed } = require('../support/embedUtils');
+
+			const embedMessage = sanitizeEmbed({
 				color: 0x33a1ff,
 				title: randomQuestion.question,
 				description: `
-				1] ${randomQuestion.answer1}\n
+                1] ${randomQuestion.answer1}\n
                 2] ${randomQuestion.answer2}\n
                 3] ${randomQuestion.answer3}\n
                 4] ${randomQuestion.answer4}\n
                 `,
-			};
+			});
 
 			message.channel.send({ embeds: [embedMessage] }).then((sentMessage) => {
 				sentMessage.react(`1\u20E3`);
 				sentMessage.react(`2\u20E3`);
 				sentMessage.react(`3\u20E3`);
 				sentMessage.react(`4\u20E3`);
+			}).catch((err) => {
+				console.error('Failed to send ISTQB embed:', err);
 			});
 			setTimeout(() => {
-				message.channel.send(randomQuestion.correctAnswer);
+				message.channel.send(randomQuestion.correctAnswer).catch((err) => {
+					console.error('Failed to send ISTQB answer message:', err);
+				});
 			}, 50000);
 		}
 		else {

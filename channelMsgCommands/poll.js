@@ -31,14 +31,17 @@ module.exports = {
 				(option, index) => `${index + 1}. ${option}`,
 			);
 
-			const embedMessage = {
+			const { sanitizeEmbed } = require('../support/embedUtils');
+
+			const embedMessage = sanitizeEmbed({
 				color: 0x33a1ff,
 				title: question,
 				description: pollOptionsFormatted.join("\n"),
 				footer: {
 					text: `Poll created by ${message.author.username}`,
 				},
-			};
+			});
+
 			message.channel.send({ embeds: [embedMessage] }).then((sentMessage) => {
 				for (let i = 0; i < voteOptions.length; i++) {
 					sentMessage.react(`${i + 1}\u20E3`);
