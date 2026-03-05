@@ -13,7 +13,8 @@
     "discord.js": "^14.7.1",
     "dotenv": "16.0.3",
     "sequelize": "^6.29.3",
-    "sqlite3": "^5.1.6"
+    "sqlite3": "^5.1.6",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "eslint": "^8.36.0"
